@@ -13,7 +13,6 @@ export async function POST(request: Request) {
     submit_type: "pay",
     mode: "payment",
     payment_method_types: ['card'],
-    line_items: lineItems,
     shipping_address_collection: {
     allowed_countries: ['US']
     },
