@@ -37,17 +37,19 @@ export function CartItems() {
       {cartItems.map((product, productIdx) => (
         <li key={product._id} className="flex py-6 sm:py-10">
           <div className="shrink-0">
-            <Image
-              placeholder="blur"
-              blurDataURL={`data:image/svg+xml;base64, ${toBase64(
-                shimmer(200, 200)
-              )}`}
-              src={urlForImage(product.images[0]).url()}
-              alt={product.name}
-              width={200}
-              height={200}
-              className="h-24 w-24 rounded-md border-2 border-gray-200 object-cover object-center dark:border-gray-800 sm:h-48 sm:w-48"
-            />
+            {product.images && (
+              <Image
+                placeholder="blur"
+                blurDataURL={`data:image/svg+xml;base64, ${toBase64(
+                  shimmer(200, 200)
+                )}`}
+                src={urlForImage(product.images).url()}
+                alt={product.name}
+                width={200}
+                height={200}
+                className="h-24 w-24 rounded-md border-2 border-gray-200 object-cover object-center dark:border-gray-800 sm:h-48 sm:w-48"
+              />
+            )}
           </div>
 
           <div className="ml-4 flex flex-1 flex-col justify-between sm:ml-6">
@@ -66,12 +68,12 @@ export function CartItems() {
                 <p className="mt-1 text-sm font-medium">
                   {formatCurrencyString({
                     value: product.price,
-                    currency: product.currency,
+                    currency: 'USD',
                   })}
                 </p>
                 <p className="mt-1 text-sm font-medium">
                   Size: {/* @ts-ignore */}
-                  <strong>{getSizeName(product.product_data?.size)}</strong>
+                  <strong>{getSizeName(product.product_data.size)}</strong>
                 </p>
               </div>
 

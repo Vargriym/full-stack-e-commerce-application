@@ -18,7 +18,7 @@ export function ProductGallery({ product }: Props) {
       {/* Image Grid */}
       <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
         <ul className="grid grid-cols-4 gap-6">
-          {product?.images.map((image, index) => (
+          {product.images.map((image, index) => (
             <div
               key={image._key as string}
               onClick={() => setSelectedImage(index)}
@@ -49,9 +49,10 @@ export function ProductGallery({ product }: Props) {
 
       {/* Main Image */}
       <div className="aspect-h-1 aspect-w-1 w-full">
-        <Image
+        {product.images && (
+          <Image
           priority
-          src={urlForImage(product?.images[selectedImage]).url()}
+          src={urlForImage(product.images[selectedImage]).url()}
           alt={`Main ${product.name} image`}
           width={600}
           height={750}
@@ -61,6 +62,8 @@ export function ProductGallery({ product }: Props) {
           )}`}
           className="h-full w-full border-2 border-gray-200 object-cover object-center shadow-sm dark:border-gray-800 sm:rounded-lg"
         />
+        )}
+        
       </div>
     </div>
   )

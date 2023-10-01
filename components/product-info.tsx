@@ -50,7 +50,7 @@ export function ProductInfo({ product }: Props) {
         <p className="text-3xl tracking-tight">
           {formatCurrencyString({
             value: product.price,
-            currency: product.currency,
+            currency: 'USD',
           })}
         </p>
       </div>
