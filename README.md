@@ -9,10 +9,10 @@
 </p>
 
 <p align="center">
-  <a href="#introduction"><strong>Introduction</strong></a> ·
-    <a href="#Key-Achievements"><strong>Features</strong></a> ·
-  <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
-    <a href="#Live-Demo"><strong>Live Demo</strong></a>
+  <a href="#Introduction"><strong>Introduction</strong></a> ·
+    <a href="#Features"><strong>Features</strong></a> ·
+  <a href="#Tech-Stack"><strong>Tech Stack</strong></a> ·
+    <a href="#View-Demo"><strong>Live Demo</strong></a>
 
   
 </p>
