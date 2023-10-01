@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
-    <a href="#Key-Achievements"><strong>Key Achievements</strong></a> ·
+    <a href="#Key-Achievements"><strong>Features</strong></a> ·
   <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
     <a href="#Live-Demo"><strong>Live Demo</strong></a>
 
@@ -28,14 +28,17 @@ https://flair-app.vercel.app
 
 This project aims to provide a convenient and efficient solution for managing and organizing users' grocery shopping experiences.
 It offers a user-friendly interface where you can easily browse through a wide range of products, add them to your virtual shopping cart, and seamlessly proceed to checkout. With features like personalized shopping lists and real-time inventory updates, this project is designed to simplify the user's grocery shopping process and enhance overall satisfaction. 
-## Key Achievements
+## Features
 
-Implemented responsive design techniques, resulting in a mobile-friendly website that enhanced accessibility and convenience for users.
+- Personalized shopping lists.
+- Real-time inventory updates.
+- User-friendly interface.
+- Easily browse through a wide range of products.
+- Seamlessly proceed to checkout.
 
 ## Tech stack
-
-- React JS
-- MobX
+- Next 13
+- React
+- Sanity
 - Stripe
-- Universal Router
-- Vercel
+- Tailwind
