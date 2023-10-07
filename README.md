@@ -38,6 +38,7 @@ It offers a user-friendly interface where you can easily browse through a wide r
 
 ## Tech stack
 - Next 13
+- TypeScript
 - React
 - Sanity
 - Stripe
