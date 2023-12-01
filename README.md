@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  A Full Stack E-Commerce Application built with Next 13, React, Sanity, Stripe & TailwindCSS.
+  A Full Stack E-Commerce Application built with Next 13, React, Sanity, Stripe & Tailwind.
 </p>
 
 <p align="center">
