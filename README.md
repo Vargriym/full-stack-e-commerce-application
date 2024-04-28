@@ -1,5 +1,4 @@
 <p align="center">
-    <img alt="typing test screenshot" src="https://github.com/Vargriym/full-stack-e-commerce-application/blob/master/e-commerce.png">
     <h1 align="center">Full Stack E-Commerce Application</h1>
   </a>
 </p>
